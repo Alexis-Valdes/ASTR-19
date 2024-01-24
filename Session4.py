@@ -11,7 +11,7 @@
 
 class Fav_Animal:
 
-    def __init__(self, arms, legs, eyes, tail, furry):
+    def __init__(self, arms = 2, legs = 2, eyes = 2, tail =  True, furry = True):
         self.arms = arms
         self.legs = legs
         self.eyes = eyes
@@ -35,9 +35,11 @@ class Fav_Animal:
         return f'''My favorite animal has {self.arms} arms and {self.legs} legs.
 {s}.
 {p}.
-I was surprised to see they had {self.eyes} eyes.
+I was surprised to see they had {self.eyes} eyes.\n
 '''
 
 if __name__ == "__main__":
     Alexis = Fav_Animal(3, 6, 3,True, True)
     print(f"Alexis has something to say about his animal\n{Alexis}")
+    Jack = Fav_Animal()
+    print(f"Jack has something to say about his animal\n{Jack}")
